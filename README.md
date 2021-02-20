@@ -40,10 +40,11 @@ As a user, I want to be able to view create and track daily workouts. I want to 
 Special thanks to the following resources that inspired this project:
 
 <ul>
-<li> [https://randomuser.me]<https://randomuser.me>, </li>
-<li> [https://www.npmjs.com/package/mysql]<https://www.npmjs.com/package/mysql>, </li>
-<li> [https://www.npmjs.com/package/inquirer/v/0.2.3]<https://www.npmjs.com/package/inquirer/v/0.2.3> </li>
-<li> [https://www.npmjs.com/package/console.table]<https://www.npmjs.com/package/console.table> </li>
+<li> [https://randomuser.me]<https://randomuser.me> </li>
+<li> [https://www.cluemediator.com/how-to-add-bootstrap-in-react#ccub]<https://www.cluemediator.com/how-to-add-bootstrap-in-react#ccub> </li>
+<li> [https://create-react-app.dev/docs/deployment/#github-pages]<https://create-react-app.dev/docs/deployment/#github-pages> </li>
+<li> [https://reactjs.org/]<https://reactjs.org> </li>
+<li> [https://www.npmjs.com/package/react-axios]<https://www.npmjs.com/package/react-axios> </li>
 </ul>
 
 ### Command to Test
