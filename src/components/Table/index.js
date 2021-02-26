@@ -4,28 +4,12 @@ import API from "../../utils/API";
 import Rows from "../../components/Rows/index";
 import "./style.css";
 
+var FA = require('react-fontawesome')
+ 
 class Table extends Component {
   constructor(props) {
     super(props);
-    this.state = { employee: [{}] };
   }
-
-  componentDidMount() {
-    API.search()
-      .then((res) => this.setState({ employee: res.data.results }))
-      .catch((err) => console.log(err));
-  }
-
-  sortByName = (event) => {
-    event.preventDefault();
-    this.setState({
-      employee: this.state.employee.sort((a, b) => {
-        if (a.name.first > b.name.first) return 1;
-        if (a.name.first < b.name.first) return -1;
-      }),
-    });
-    console.log("Sorting by name . . .");
-  };
 
   filterById = (event) => {
     event.preventDefault();
@@ -35,7 +19,7 @@ class Table extends Component {
   };
 
   renderEmloyeeData() {
-      const mappedArr = this.state.employee.map((result) => {
+      const mappedArr = this.props.results.map((result) => {
           return (
             <tr key={result.login.uuid}>
                 <td><img src={result.picture.medium}/></td>
@@ -60,19 +44,19 @@ class Table extends Component {
               <tr>
                 <th scope="col">Image</th>
                 <th scope="col">
-                  <i
-                    onClick={this.sortByName}
-                    className="fas fa-caret-up"
+                  <FA
+                    name = "caret-up"
+                    onClick={this.props.sortByFirstName}
                     style={{ color: "black", cursor: "pointer" }}
-                  ></i>
+                  ></FA>
                   First Name
                 </th>
                 <th scope="col">
-                  <i
-                    onClick={this.sortByName}
-                    className="fas fa-caret-up"
+                  <FA
+                    name = "caret-up"
+                    onClick={this.props.sortByLastName}
                     style={{ color: "black", cursor: "pointer" }}
-                  ></i>
+                  ></FA>
                   Last Name
                 </th>
                 <th scope="col">Phone</th>

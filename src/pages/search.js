@@ -35,6 +35,30 @@ class Search extends Component {
       })
     };
 
+    // Sort By First Name Function
+    sortByFirstName = (event) => {
+      event.preventDefault();
+      this.setState({
+        results: this.state.results.sort((a, b) => {
+          if (a.name.first > b.name.first) return 1;
+          if (a.name.first < b.name.first) return -1;
+        }),
+      });
+      console.log("Sorting by FIRST name . . .");
+    };
+
+    // Sort By Last Name Function
+    sortByLastName = (event) => {
+      event.preventDefault();
+      this.setState({
+        results: this.state.results.sort((a, b) => {
+          if (a.name.last > b.name.last) return 1;
+          if (a.name.last < b.name.last) return -1;
+        }),
+      });
+      console.log("Sorting by LAST name . . .");
+    };
+
   //Render Search Results  
   render() {
     return (
@@ -44,7 +68,10 @@ class Search extends Component {
             handleFormSubmit={this.handleFormSubmit}
             handleInputChange={this.handleInputChange}
           />
-          <Rows results={this.state.results} />
+          <Table results={this.state.results}
+          sortByFirstName={this.sortByFirstName}
+          sortByLastName={this.sortByLastName} />
+
         </div>
     );
   }
