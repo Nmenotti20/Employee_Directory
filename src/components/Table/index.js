@@ -63,7 +63,7 @@ class Table extends Component {
                   <i
                     onClick={this.sortByName}
                     className="fas fa-caret-up"
-                    style={{ color: "red", cursor: "pointer" }}
+                    style={{ color: "black", cursor: "pointer" }}
                   ></i>
                   First Name
                 </th>
@@ -71,7 +71,7 @@ class Table extends Component {
                   <i
                     onClick={this.sortByName}
                     className="fas fa-caret-up"
-                    style={{ color: "red", cursor: "pointer" }}
+                    style={{ color: "black", cursor: "pointer" }}
                   ></i>
                   Last Name
                 </th>
