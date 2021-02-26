@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-// import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
-import SearchResults from "../components/searchResults";
-// import Alert from "../components/Alert";
+import Rows from "../components/Rows/index";
+import Table from "../components/Table";
 
 class Search extends Component {
   state = {
@@ -11,7 +10,7 @@ class Search extends Component {
     results: [],
   };
 
-  // When the component mounts, get a list of all available base breeds and update this.state.breeds
+  // When the component mounts, get a list of all available base employees and update.
   componentDidMount() {
     API.getRandomEmployees()
     // .then(res => console.log(res))
@@ -19,10 +18,12 @@ class Search extends Component {
       .catch(err => console.log(err));
   }
 
+  // handleInputChange
   handleInputChange = event => {
     this.setState({ search: event.target.value });
   };
 
+  // handleFormSubmit
   handleFormSubmit = event => {
     event.preventDefault();
       const filteredEmployees = this.state.results.filter((employee) => {
@@ -32,30 +33,18 @@ class Search extends Component {
       this.setState({
         results: filteredEmployees
       })
-    // API.getDogsOfBreed(this.state.search)
-    //   .then(res => {
-    //     if (res.data.status === "error") {
-    //       throw new Error(res.data.message);
-    //     }
-    //     this.setState({ results: res.data.message, error: "" });
-    //   })
-    //   .catch(err => this.setState({ error: err.message }));
-  };
+    };
+
+  //Render Search Results  
   render() {
     return (
         <div style={{ minHeight: "80%" }}>
-          <h1 className="text-center">Search By Employee!</h1>
-          {/* <Alert
-            type="danger"
-            style={{ opacity: this.state.error ? 1 : 0, marginBottom: 10 }}
-          >
-            {this.state.error}
-          </Alert> */}
+          <h1 className="text-center">Employee Directory</h1>
           <SearchForm
             handleFormSubmit={this.handleFormSubmit}
             handleInputChange={this.handleInputChange}
           />
-          <SearchResults results={this.state.results} />
+          <Rows results={this.state.results} />
         </div>
     );
   }
