@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import SearchForm from "../SearchForm/index";
+import SearchForm from "../SearchForm";
 import API from "../../utils/API";
-import Rows from "../../components/Rows/index";
+import Table from "../../components/Table";
 import "./style.css";
 
 var FA = require('react-fontawesome')
  
-class Table extends Component {
+class Tables extends Component {
   constructor(props) {
     super(props);
   }
@@ -76,4 +76,4 @@ class Table extends Component {
   }
 }
 
-export default Table;
+export default Tables;

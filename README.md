@@ -1,7 +1,7 @@
 # Employee_Directory
 Employee_Directory
 
-[![GitHub followers](https://img.shields.io/github/followers/Nmenotti20?label=Follow&style=social)](https://github.com/Nmenotti20) [![project-top-language](https://img.shields.io/github/languages/top/Nmenotti20/README_Generator?color=yellow)](https://github.com/Nmenotti20/Fitness_Tracker) [![license](https://img.shields.io/badge/License-mit-brightgreen.svg)](https://choosealicense.com/licenses/mit/)
+[![GitHub followers](https://img.shields.io/github/followers/Nmenotti20?label=Follow&style=social)](https://github.com/Nmenotti20) [![project-top-language](https://img.shields.io/github/languages/top/Nmenotti20/README_Generator?color=yellow)](https://github.com/Nmenotti20/Employee_Directory) [![license](https://img.shields.io/badge/License-mit-brightgreen.svg)](https://choosealicense.com/licenses/mit/)
 
 ##### Version 1.0
 
@@ -23,11 +23,9 @@ As a user, I want to be able to view my entire employee directory at once so tha
 
 #### Project Links:
 
-[GitHub Repo](https://github.com/Nmenotti20/Fitness_Tracker)<br>
+[GitHub Repo](https://github.com/Nmenotti20/Employee_Directory)<br>
 
-![Video Demo](/assets/demo.gif)<br>
-
-![Additional Links](/assets/image.jpg)<br>
+![Deployed URL](https://nmenotti20.github.io/Employee_Directory/)<br>
 
 ### Installation
 
@@ -132,5 +130,5 @@ Copyright © 2020 [Nick Menotti]<br>
 
 <p align='center'><i>
 Please contact me for additional information:<br>
-[GitHub Repo](https://github.com/Nmenotti20/Fitness_Tracker)<br>
+[GitHub Repo](https://github.com/Nmenotti20/Employee_Directory)<br>
 [Email:](nmenotti@cox.net)</i></p>

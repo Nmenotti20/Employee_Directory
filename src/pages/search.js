@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import SearchForm from "../components/SearchForm";
-import Rows from "../components/Rows/index";
 import Table from "../components/Table";
 
 class Search extends Component {
